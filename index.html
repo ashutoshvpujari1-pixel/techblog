@@ -508,7 +508,19 @@
 
       <div class="share-buttons">
         <a href="https://www.linkedin.com/in/ashutosh-pujari-91303b34">in LinkedIn</a>
+        <a id="copyBtn" href="#">🔗 Copy Link</a>
       </div>
+      <script>
+      	var copybtn = document.getElementById("copyBtn");
+      	copybtn.onclick = function() {
+      		navigator.clipboard.writeText("https://ashutoshvpujari1-pixel.github.io/techblog/");
+      		
+      		copyBtn.innerHTML = "Copied"
+      		setTimeout(function(){
+      			copyBtn.innerHTML = "🔗 Copy Link"
+      			}, 2000)
+      	}
+      </script>
     </aside>
 
   </main>
